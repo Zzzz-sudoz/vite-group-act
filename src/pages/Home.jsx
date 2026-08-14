@@ -10,6 +10,7 @@ function Home() {
         <div className="max-w-md bg-gray-100 p-5">
           <h2 className="mb-3 text-lg font-bold text-[#222]">AVAILABLE ACTIVITIES</h2>
           <p className="mb-2">Activity 1 – Login Authentication</p>
+          <p className="mb-2">Activity 2 – Student Grade Evaluation</p>
           <p>Activity 5 – Employee Attendance Checker</p>
         </div>
       </div>
