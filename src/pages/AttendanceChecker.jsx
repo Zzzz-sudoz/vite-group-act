@@ -38,15 +38,15 @@ function AttendanceChecker() {
   }
 
   return (
-    <section className="w-full px-5 py-8 text-left font-sans text-[#222] sm:px-8">
-      <div className="max-w-2xl">
-        <h1 className="mb-2 text-3xl font-bold text-[#222]">EMPLOYEE ATTENDANCE CHECKER</h1>
-        <p className="mb-5 text-sm text-gray-600">
+    <section className="w-full bg-[#eee9e0] px-5 py-10 text-left font-sans text-[#211f1b] sm:px-8">
+      <div className="mx-auto max-w-5xl">
+        <h1 className="mb-0 border-l-8 border-[#c9652d] bg-[#faf6ef] px-5 pt-5 text-3xl font-bold text-[#211f1b]">EMPLOYEE ATTENDANCE CHECKER</h1>
+        <p className="mb-6 border-l-8 border-[#c9652d] bg-[#faf6ef] px-5 pb-5 pt-2 text-sm text-[#6b6259]">
           Enter the employee details and use a decimal time such as 8.5 for 8:30 AM.
         </p>
-        <div className="mb-6 border-t border-gray-300"></div>
+        <div className="mb-6 border-t border-[#c9652d]"></div>
 
-        <form onSubmit={handleCheckAttendance} className="max-w-sm">
+        <form onSubmit={handleCheckAttendance} className="max-w-sm border border-[#d8d0c5] bg-white p-5">
           <div className="mb-3">
             <label htmlFor="employeeName" className="mb-1 block text-sm font-medium">
               EMPLOYEE NAME:
@@ -56,7 +56,7 @@ function AttendanceChecker() {
               type="text"
               value={employeeName}
               onChange={(event) => setEmployeeName(event.target.value)}
-              className="w-full border border-gray-400 bg-white px-2 py-2 text-[#222] outline-none focus:border-gray-700"
+              className="w-full border border-[#cabfb2] bg-white px-2 py-2 text-[#211f1b] outline-none focus:border-[#c9652d]"
             />
           </div>
 
@@ -70,21 +70,21 @@ function AttendanceChecker() {
               step="0.1"
               value={timeIn}
               onChange={(event) => setTimeIn(event.target.value)}
-              className="w-full border border-gray-400 bg-white px-2 py-2 text-[#222] outline-none focus:border-gray-700"
+              className="w-full border border-[#cabfb2] bg-white px-2 py-2 text-[#211f1b] outline-none focus:border-[#c9652d]"
             />
           </div>
 
           <div className="flex flex-wrap gap-2">
             <button
               type="submit"
-              className="cursor-pointer border border-gray-500 bg-gray-100 px-4 py-2 text-sm font-medium text-[#222] hover:bg-gray-200"
+              className="cursor-pointer border border-[#c9652d] bg-[#c9652d] px-4 py-2 text-sm font-semibold text-white hover:bg-[#ad5425]"
             >
               CHECK ATTENDANCE
             </button>
             <button
               type="button"
               onClick={handleReset}
-              className="cursor-pointer border border-gray-500 bg-white px-4 py-2 text-sm font-medium text-[#222] hover:bg-gray-200"
+              className="cursor-pointer border border-[#211f1b] bg-[#211f1b] px-4 py-2 text-sm font-semibold text-white hover:bg-[#332f2a]"
             >
               RESET
             </button>
@@ -92,17 +92,17 @@ function AttendanceChecker() {
         </form>
 
         {attendanceStatus !== '' ? (
-          <div className="mt-6 max-w-sm bg-gray-100 p-5">
-            <h2 className="mb-3 text-lg font-bold text-[#222]">ATTENDANCE RESULT</h2>
+          <div className="mt-6 max-w-sm border border-[#d8d0c5] border-l-4 border-l-[#c9652d] bg-white p-5">
+            <h2 className="mb-3 text-lg font-bold text-[#211f1b]">ATTENDANCE RESULT</h2>
             <p className="mb-1"><span className="font-semibold">Employee Name:</span> {employeeName}</p>
             <p className="mb-1"><span className="font-semibold">Time In:</span> {timeIn}</p>
             <p className="mb-1"><span className="font-semibold">Attendance Status:</span> {attendanceStatus}</p>
-            <p className="mt-3 border-t border-gray-300 pt-3">{message}</p>
+            <p className="mt-3 border-t border-[#d8d0c5] pt-3">{message}</p>
           </div>
         ) : null}
 
         {message !== '' && attendanceStatus === '' ? (
-          <div className="mt-5 max-w-sm border-l-4 border-red-600 bg-red-50 px-4 py-3 text-sm text-red-700">
+          <div className="mt-5 max-w-sm border-l-4 border-[#a6422e] bg-[#fff3ee] px-4 py-3 text-sm text-[#8f2f20]">
             {message}
           </div>
         ) : null}
