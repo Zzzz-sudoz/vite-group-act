@@ -4,13 +4,6 @@ function Navbar({ page, setPage }) {
       <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-2">
         <button
           type="button"
-          onClick={() => setPage('home')}
-          className={page === 'home' ? 'cursor-pointer bg-[#c9652d] px-3 py-2 font-semibold text-white' : 'cursor-pointer px-3 py-2 text-[#f5e4d2] hover:bg-[#332f2a] hover:text-white'}
-        >
-          Home
-        </button>
-        <button
-          type="button"
           onClick={() => setPage('activity1')}
           className={page === 'activity1' ? 'cursor-pointer bg-[#c9652d] px-3 py-2 font-semibold text-white' : 'cursor-pointer px-3 py-2 text-[#f5e4d2] hover:bg-[#332f2a] hover:text-white'}
         >

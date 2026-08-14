@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
-import Home from './pages/Home'
 import Login from './pages/Login'
 import GradeEvaluation from './pages/GradeEvaluation'
 import PasswordChecker from './pages/PasswordChecker'
@@ -8,7 +7,7 @@ import ElectricityBill from './pages/ElectricityBill'
 import AttendanceChecker from './pages/AttendanceChecker'
 
 function App() {
-  const [page, setPage] = useState('home')
+  const [page, setPage] = useState('activity1')
   let content
 
   if (page === 'activity1') {
@@ -22,7 +21,7 @@ function App() {
   } else if (page === 'activity5') {
     content = <AttendanceChecker />
   } else {
-    content = <Home />
+    content = <Login />
   }
 
   return (
