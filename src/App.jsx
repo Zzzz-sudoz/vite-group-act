@@ -26,7 +26,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#222]">
+    <div className="min-h-screen bg-[#eee9e0] font-sans text-[#211f1b]">
       <Navbar page={page} setPage={setPage} />
       <main>{content}</main>
     </div>
