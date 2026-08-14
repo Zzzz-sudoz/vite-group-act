@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import GradeEvaluation from './pages/GradeEvaluation'
 import PasswordChecker from './pages/PasswordChecker'
+import ElectricityBill from './pages/ElectricityBill'
 import AttendanceChecker from './pages/AttendanceChecker'
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
     content = <GradeEvaluation />
   } else if (page === 'activity3') {
     content = <PasswordChecker />
+  } else if (page === 'activity4') {
+    content = <ElectricityBill />
   } else if (page === 'activity5') {
     content = <AttendanceChecker />
   } else {

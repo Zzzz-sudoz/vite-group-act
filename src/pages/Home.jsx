@@ -12,6 +12,7 @@ function Home() {
           <p className="mb-2">Activity 1 – Login Authentication</p>
           <p className="mb-2">Activity 2 – Student Grade Evaluation</p>
           <p className="mb-2">Activity 3 – Password Strength Checker</p>
+          <p className="mb-2">Activity 4 – Electricity Bill Calculator</p>
           <p>Activity 5 – Employee Attendance Checker</p>
         </div>
       </div>
