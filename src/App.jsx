@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import GradeEvaluation from './pages/GradeEvaluation'
+import PasswordChecker from './pages/PasswordChecker'
 import AttendanceChecker from './pages/AttendanceChecker'
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
     content = <Login />
   } else if (page === 'activity2') {
     content = <GradeEvaluation />
+  } else if (page === 'activity3') {
+    content = <PasswordChecker />
   } else if (page === 'activity5') {
     content = <AttendanceChecker />
   } else {
