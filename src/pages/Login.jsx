@@ -35,9 +35,8 @@ function Login() {
         </p>
         <div className="mb-6 border-t border-[#c9652d]"></div>
 
-        <div className="flex flex-col gap-6 md:flex-row md:items-start">
-          {!isLoggedIn ? (
-            <form onSubmit={handleLogin} className="w-full max-w-sm border border-[#d8d0c5] bg-white p-5">
+        {!isLoggedIn ? (
+          <form onSubmit={handleLogin} className="w-full max-w-sm border border-[#d8d0c5] bg-white p-5">
               <div className="mb-3">
                 <label htmlFor="username" className="mb-1 block text-sm font-medium">
                   ENTER USERNAME:
@@ -78,9 +77,9 @@ function Login() {
                   {message}
                 </div>
               ) : null}
-            </form>
-          ) : (
-            <div className="w-full max-w-sm border border-[#d8d0c5] border-l-4 border-l-[#c9652d] bg-white p-5">
+          </form>
+        ) : (
+          <div className="w-full max-w-sm border border-[#d8d0c5] border-l-4 border-l-[#c9652d] bg-white p-5">
               <h2 className="mb-2 text-xl font-bold text-[#211f1b]">Welcome, {username}!</h2>
               <p className="mb-4 text-[#39734d]">{message}</p>
               <button
@@ -90,17 +89,8 @@ function Login() {
               >
                 LOGOUT
               </button>
-            </div>
-          )}
-
-          <div className="w-full max-w-sm border border-[#d8d0c5] border-l-8 border-l-[#c9652d] bg-[#faf6ef] p-5">
-            <h2 className="mb-4 text-xl font-bold text-[#211f1b]">GROUP 404 NOT FOUND</h2>
-            <p className="mb-2">Raphael Sinangote</p>
-            <p className="mb-2">Angelo Quinto</p>
-            <p className="mb-2">Wayne Candelario</p>
-            <p>Ian Lance Gamao</p>
           </div>
-        </div>
+        )}
       </div>
     </section>
   )
