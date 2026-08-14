@@ -25,9 +25,8 @@ function Navbar({ page, setPage }) {
         </button>
         <button
           type="button"
-          disabled
-          className="cursor-not-allowed text-gray-400"
-          title="Activity 3 is not available yet"
+          onClick={() => setPage('activity3')}
+          className={page === 'activity3' ? 'cursor-pointer font-semibold text-red-600' : 'cursor-pointer text-[#222] hover:text-red-600'}
         >
           Activity 3
         </button>
